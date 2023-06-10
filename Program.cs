@@ -15,7 +15,7 @@ void Task25()
 void Task27()
 {
     int A = InText("Введите число");
-    A = Math.Abs(A);
+    //A = Math.Abs(A);
     int Numsum = 0;
     while(A != 0)
     {
