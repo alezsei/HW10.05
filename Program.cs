@@ -25,5 +25,33 @@ void Task27()
     Console.WriteLine(Numsum);
 }
 
-//Task25();
+void Creatarray(int[] array)
+{
+    for (int i = 0; i<array.Length;i++)
+    {
+        array[i] = new Random().Next(-15,39);
+    }
+}
+
+void Printarray(int[] array)
+{
+    for (int i = 0; i<array.Length;i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+}
+
+void Task29()
+{
+    int size = InText("Введите размер массива");
+    int[]  numbers= new int[size];
+    Creatarray(numbers);
+    for (int i = 0; i<numbers.Length;i++)
+    {
+        numbers[i] = Math.Abs(numbers[i]);
+        Console.Write($"{numbers[i]} ");
+    }
+}
+Task25();
 Task27();
+Task29();
