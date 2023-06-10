@@ -12,5 +12,18 @@ void Task25()
 
 }
 
+void Task27()
+{
+    int A = InText("Введите число");
+    A = Math.Abs(A);
+    int Numsum = 0;
+    while(A != 0)
+    {
+        Numsum = Numsum + A%10;
+        A =A/10;
+    }
+    Console.WriteLine(Numsum);
+}
 
-Task25();
+//Task25();
+Task27();
